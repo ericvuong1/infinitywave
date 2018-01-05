@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shiald-Smooth TriPlanar
+  m_Shader: {fileID: 4800000, guid: 9d114007f05b94b4d8b46280116e08bf, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 8d6b407412fa4054da20f946c6c98c8f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: 09064939d711baa45b1079d88a3d39c3, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dd3e981cc6e074743b9975d7391f4658, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ripple:
+        m_Texture: {fileID: 2800000, guid: aab9499feed6af04192e578e6f199aa2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 2, y: 0}
+    - _RippleTex:
+        m_Texture: {fileID: 2800000, guid: 6f80dc1ed25d8c443b10ab029227744b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 2, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 2800000, guid: 2096adc93faa06444b3e6dfdc6d83d10, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AnimFreq: 7.38
+    - _AnimOffsetX: 0
+    - _AnimOffsetY: 0
+    - _AnimPowerX: 0
+    - _AnimPowerY: 0
+    - _AnimSpeed: 50
+    - _BumpAmt: 5.2
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionScaleUI: 0
+    - _FresnelBias: 0.395
+    - _FresnelPower: 0.06
+    - _FresnelScale: 0.605
+    - _Glossiness: 0.5
+    - _Index: 0.9
+    - _Intensity: 1
+    - _LerpVal: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Power: 3.43
+    - _Speed: 9.6
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _Value: 1.4
+    - _ZWrite: 1
+    m_Colors:
+    - _ABC: {r: 1, g: 10, b: 0.1, a: 1}
+    - _Color: {r: 0, g: 0.08965492, b: 1, a: 0.434}
+    - _Direction: {r: 0.1, g: 0.16, b: -0.12, a: 0.1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _ImpactPos: {r: 0, g: 0, b: 0, a: 0}
+    - _ImpactPos0: {r: 0, g: 0, b: 0, a: 0}
+    - _ImpactPos1: {r: 0, g: 0, b: 0, a: 0}
+    - _ImpactPos2: {r: 0, g: 0, b: 0, a: 0}
