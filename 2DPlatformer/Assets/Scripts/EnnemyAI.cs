@@ -91,7 +91,6 @@ public class EnnemyAI : MonoBehaviour
         }
         //Start a new path to the target position, return the result to the OnPathComplete method
         seeker.StartPath(transform.position, target.position, OnPathComplete);
-
         yield return new WaitForSeconds(1f / updateRate);
         StartCoroutine(UpdatePath());
     }
@@ -124,7 +123,8 @@ public class EnnemyAI : MonoBehaviour
         pathIsEnded = false;
 
         //Direction to the next waypoint
-        Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+        //Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+        Vector3 dir = (target.position - transform.position).normalized;  // this line fixes bug when player respawns
         dir *= speed * Time.fixedDeltaTime;
 
         //move the AI
