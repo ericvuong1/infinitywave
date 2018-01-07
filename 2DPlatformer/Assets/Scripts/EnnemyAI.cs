@@ -3,7 +3,7 @@ using System.Collections;
 using Pathfinding;
 using UnityEngine;
 
-[RequireComponent (typeof (Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Seeker))]
 
 public class EnnemyAI : MonoBehaviour
@@ -38,7 +38,7 @@ public class EnnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 
-        if(target == null)
+        if (target == null)
         {
             if (!searchingForPlayer)
             {
@@ -49,13 +49,13 @@ public class EnnemyAI : MonoBehaviour
         }
         //Start a new path to the target position, return the result to the OnPathComplete method
         seeker.StartPath(transform.position, target.position, OnPathComplete);
-       
+
 
         StartCoroutine(UpdatePath());
     }
     IEnumerator SearchForPlayer()
     {
-       GameObject sResult = GameObject.FindGameObjectWithTag("Player");
+        GameObject sResult = GameObject.FindGameObjectWithTag("Player");
         if (sResult == null)
         {
             yield return new WaitForSeconds(0.5f);
@@ -77,7 +77,7 @@ public class EnnemyAI : MonoBehaviour
             path = p;
             currentWaypoint = 0;
         }
-    } 
+    }
     IEnumerator UpdatePath()
     {
         if (target == null)
@@ -95,7 +95,8 @@ public class EnnemyAI : MonoBehaviour
         yield return new WaitForSeconds(1f / updateRate);
         StartCoroutine(UpdatePath());
     }
-    private void FixedUpdate(){
+    private void FixedUpdate()
+    {
         if (target == null)
         {
             if (!searchingForPlayer)
@@ -110,33 +111,33 @@ public class EnnemyAI : MonoBehaviour
         {
             return;
         }
-        if(currentWaypoint>= path.vectorPath.Count)
+        if (currentWaypoint >= path.vectorPath.Count)
+        {
+            if (pathIsEnded)
             {
-                if (pathIsEnded)
-                {
-                    return;
-                }
-                Debug.Log("End of path reached.");
-                pathIsEnded = true;
                 return;
             }
-            pathIsEnded = false;
+            Debug.Log("End of path reached.");
+            pathIsEnded = true;
+            return;
+        }
+        pathIsEnded = false;
 
-            //Direction to the next waypoint
-            Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
-            dir *= speed * Time.fixedDeltaTime;
-            Debug.Log(dir);
-            //move the AI
-            rb.AddForce(dir, fMode);
+        //Direction to the next waypoint
+        Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+        dir *= speed * Time.fixedDeltaTime;
 
-            float dist = Vector3.Distance(transform.position, path.vectorPath[currentWaypoint]);
-            if (dist < nextWaypointDistance)
-            {
-                currentWaypoint++;
-                return;
-            }
+        //move the AI
+        rb.AddForce(dir, fMode);
+        Debug.Log(target.position);
+        float dist = Vector3.Distance(transform.position, path.vectorPath[currentWaypoint]);
+        if (dist < nextWaypointDistance)
+        {
+            currentWaypoint++;
+            return;
         }
     }
+}
 
 
 
