@@ -71,7 +71,7 @@ public class EnnemyAI : MonoBehaviour
     }
     public void OnPathComplete(Path p)
     {
-        Debug.Log("We got a path. Did it have an error? " + p.error);
+       // Debug.Log("We got a path. Did it have an error? " + p.error);
         if (!p.error)
         {
             path = p;
@@ -116,7 +116,7 @@ public class EnnemyAI : MonoBehaviour
             {
                 return;
             }
-            Debug.Log("End of path reached.");
+            //Debug.Log("End of path reached.");
             pathIsEnded = true;
             return;
         }
@@ -129,7 +129,6 @@ public class EnnemyAI : MonoBehaviour
 
         //move the AI
         rb.AddForce(dir, fMode);
-        Debug.Log(target.position);
         float dist = Vector3.Distance(transform.position, path.vectorPath[currentWaypoint]);
         if (dist < nextWaypointDistance)
         {

@@ -28,6 +28,7 @@ public class Spells : MonoBehaviour {
 
     void Shield()
     {
+        //manage shield cooldown
         if (Input.GetButtonDown(shield) && Time.time > shieldTimeNextCast)
         {
             shieldTimeNextCast = Time.time + ShieldCooldown;

@@ -8,6 +8,7 @@ TagManager:
   - GM
   - Enemy
   - Player2
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Obstacle
   - SupportSpell
   - Enemy
-  - 
+  - Weapon
   - 
   - 
   - 

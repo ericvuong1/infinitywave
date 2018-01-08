@@ -64,7 +64,7 @@ namespace UnityStandardAssets._2D
             newPos = new Vector3(newPos.x, Mathf.Clamp(newPos.y, yPosRestriction, Mathf.Infinity), newPos.z);
 
             float zoomSize = Mathf.Clamp(Vector2.Distance(player1.position, player2.position), minZoom, maxZoom);
-            this.GetComponentInChildren<Camera>().orthographicSize = zoomSize;
+            this.GetComponentInChildren<Camera>().orthographicSize = Mathf.Lerp(this.GetComponentInChildren<Camera>().orthographicSize, zoomSize, 0.01f);
 
             transform.position = newPos;
 

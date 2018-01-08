@@ -238,6 +238,7 @@
     <Compile Include="Assets\Energy Shield\Scripts\ImpactTesting.cs" />
     <Compile Include="Assets\Energy Shield\Scripts\Projectile.cs" />
     <Compile Include="Assets\Energy Shield\Scripts\Shield.cs" />
+    <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
     <Compile Include="Assets\Scripts\ArmRotation.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Ennemy.cs" />
@@ -252,6 +253,9 @@
     <Compile Include="Assets\Scripts\Tiling.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Sword.cs" />
+    <Compile Include="Assets\SwordCollider.cs" />
+    <Compile Include="Assets\WaveUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh.cginc" />
@@ -263,6 +267,8 @@
     <None Include="Assets\Energy Shield\Scripts\Shaders\Shield.shader" />
     <None Include="Assets\Energy Shield\Scripts\Shaders\ShieldRipple-Basic.shader" />
     <None Include="Assets\Energy Shield\Scripts\Shaders\ShieldRipple.shader" />
+    <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
+    <None Include="Assets\Fonts\Documentation\JazzCreateBubble_VersionHistory_1.1.txt" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
