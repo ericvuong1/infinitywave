@@ -256,6 +256,7 @@
     <Compile Include="Assets\Sword.cs" />
     <Compile Include="Assets\SwordCollider.cs" />
     <Compile Include="Assets\WaveUI.cs" />
+    <Compile Include="Assets\WeaponSwitching.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh.cginc" />

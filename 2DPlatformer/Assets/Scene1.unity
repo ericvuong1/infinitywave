@@ -207,7 +207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1549832644938170, guid: b229958447261044cb3b0451f9cadf0a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114790546094170366, guid: b229958447261044cb3b0451f9cadf0a,
         type: 2}
@@ -2333,6 +2333,23 @@ MonoBehaviour:
   hasARightBuddy: 0
   hasALeftBuddy: 0
   reverseScale: 0
+--- !u!1 &1652355548 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1723267077297318, guid: b229958447261044cb3b0451f9cadf0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 23008077}
+--- !u!114 &1652355550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652355548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4afab640ca8efb43a5bb16f79d6c38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedWeapon: 0
 --- !u!4 &1652739903 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4291286795027836, guid: 10ffce01b4b20034b859b3c8fd34f0cd,
